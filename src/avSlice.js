@@ -10,26 +10,26 @@ export const avSlice = createSlice({
         quantity: 0,
     },
     {
-        img: "/speakers.jpg",
+        img: "/projector.jpg",
         name: "Speaker",
         cost: 35,
         quantity: 0,
     },
     {
-        img: "/microphone.jpg",
+        img: "/projector.jpg",
         name: "Microphones",
         cost: 45,
         quantity: 0,
     },
     {
-        img: "/board.jpg",
+        img: "/projector.jpg",
         name: "Whiteboards",
         cost: 80,
         quantity: 0,
     },
 
     {
-        img: "",
+        img: "/projector.jpg",
         name: "Signage",
         cost: 80,
         quantity: 0,
