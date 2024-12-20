@@ -23,13 +23,13 @@ export const venueSlice = createSlice({
       quantity: 0,
     },
     {
-      img: "/AUdi.png",
+      img: "/audi.png",
       name: "Large Meeting Room (Capacity:10)",
       cost: 900,
       quantity: 0,
     },
     {
-      img: "/sm_meeting_room.jpg",
+      img: "/sm_meeting_room",
       name: "Small Meeting Room (Capacity:5)",
       cost: 1100,
       quantity: 0,
@@ -56,5 +56,4 @@ export const venueSlice = createSlice({
 });
 
 export const { incrementQuantity, decrementQuantity } = venueSlice.actions;
-
 export default venueSlice.reducer;

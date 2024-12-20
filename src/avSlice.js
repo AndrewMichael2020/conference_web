@@ -1,12 +1,12 @@
-import { createSlice } from "@reduxjs/toolkit";
+    import { createSlice } from "@reduxjs/toolkit";
 
 export const avSlice = createSlice({
   name: "av",
   initialState: [
         {
-        img: "/projector.jpg", 
+        img: "/projector.jpg",
         name: "Projectors",
-        cost: 200, 
+        cost: 200,
         quantity: 0,
     },
     {
@@ -16,20 +16,20 @@ export const avSlice = createSlice({
         quantity: 0,
     },
     {
-        img: "/Microphone.jpg",
+        img: "/microphone.jpg",
         name: "Microphones",
         cost: 45,
         quantity: 0,
     },
     {
-        img: "/board.JPG",
+        img: "/board.jpg",
         name: "Whiteboards",
         cost: 80,
         quantity: 0,
     },
 
     {
-        img: "/signs.jpg",
+        img: "",
         name: "Signage",
         cost: 80,
         quantity: 0,
@@ -40,16 +40,16 @@ export const avSlice = createSlice({
 
   reducers: {
     incrementAvQuantity: (state, action) => {
-      const item = state[action.payload];
-      if (item) {
-        item.quantity++;
-    }
+        const item = state[action.payload];
+        if (item) {
+            item.quantity++;
+        }
     },
     decrementAvQuantity: (state, action) => {
-      const item = state[action.payload];
-      if (item && item.quantity > 0) {
-        item.quantity--;
-    }
+        const item = state[action.payload];
+        if (item && item.quantity > 0) {
+            item.quantity--;
+        }
     },
   },
 });
